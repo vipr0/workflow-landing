@@ -1,0 +1,14 @@
+{
+  "name": "workstation-landing",
+  "version": "0.0.1",
+  "description": "A simple landing page on HTML + SCSS",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css --watch ./sass/"
+  },
+  "author": "Vitalii Protsyk",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

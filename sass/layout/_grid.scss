@@ -1,0 +1,47 @@
+.row {
+  max-width: 101rem;
+  margin: 0 auto;
+
+  @include respond(md) {
+    padding: 3rem;
+  }
+
+  @include clearfix;
+
+  .col--right {
+    float: right !important;
+  }
+
+  .col--left {
+    float: left;
+  }
+
+  .col-1-of-2 {
+    width: calc(100% / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc(100% / 3);
+  }
+
+  .col-2-of-3 {
+    width: calc(2 * (100% / 3));
+  }
+
+  .col-1-of-4 {
+    width: calc(100% / 4);
+  }
+
+  .col-3-of-4 {
+    width: calc(3 * (100% / 4));
+  }
+
+  [class^="col-"] {
+    float: left;
+    
+    @include respond(xs) {
+      width: 100%; 
+      text-align: center;
+    }
+  }
+}

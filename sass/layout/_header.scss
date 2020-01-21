@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../../img/bench-accounting-49909.jpg");
+    background-size: cover;
+    background-position: top;
+
+    &__text-box {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        text-align: center;
+
+        @include respond(xs) {
+            width: 90%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

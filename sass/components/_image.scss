@@ -1,0 +1,27 @@
+.image {
+    border-radius: 3px;
+    transition: all .2s;
+    object-fit: cover;
+
+    @include respond(md) {
+        padding: 0 2rem;
+        width: 90%;
+    }
+
+    @include respond(sm) {
+        width: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        transform: scale(1.05);
+    }
+
+    &--left {
+        float: left;
+    }
+
+    &--right {
+        float: right;
+    }
+}

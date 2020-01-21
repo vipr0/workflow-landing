@@ -1,0 +1,47 @@
+.heading__primary {
+    color: $color-white;
+    font-weight: 400;
+    text-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    margin-bottom: 16.6rem;
+
+    @include respond(xs) {
+        margin-bottom: 10rem;
+    }
+
+    &--main {
+        font-size: 8.3rem;
+        display: block;
+    }
+
+    &--sub {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+    }
+}
+
+.heading__secondary {
+    background-image: linear-gradient(-133deg, #ef8847 0%, #fd9c57 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 6rem 0;
+    transition: all .2s;
+
+    @include respond(md) {
+        padding: 2rem 0;
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-.5rem);
+    }
+}
+
+.paragraph {
+    color: $color-grey-dark;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+}

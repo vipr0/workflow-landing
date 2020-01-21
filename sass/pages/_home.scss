@@ -1,0 +1,27 @@
+.section-make {
+  padding: 17rem 0;
+
+  &__image {
+    float: right;
+    border-radius: 3px;
+  }
+
+  @include respond(xs) {
+    padding: 8rem 0;
+  }
+}
+
+.section-work {
+  margin-bottom: 15rem;
+}
+
+.section-supply {
+  background-image: linear-gradient(rgba(#ef8847, 0.15), rgba(#ef8847, 0.15)), url(../../img/hipster-mum-236831.png);
+  background-size: cover;
+  background-position: top;
+  padding: 9rem 0;
+
+  @include respond(xs) {
+    padding: 4rem 0;
+  }
+}
